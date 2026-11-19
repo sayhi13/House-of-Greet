@@ -44,4 +44,4 @@ The technique focuses on how `ptmalloc2` traverses and unlinks chunks from the *
 
 ## Defensive Takeaway
 
-Strict metadata validation on unlink—such as verifying `fd`/`bk` reciprocity and adjacent chunk `size`/`prev_size`/`PREV_INUSE` invariants introduced in `glibc 2.28`—alongside eliminating Use-After-Free and out-of-bounds write primitives prevents forged bin entries from passing allocator consistency checks.
+Strict metadata validation on unlink - such as verifying `fd`/`bk` reciprocity and adjacent chunk `size`/`prev_size`/`PREV_INUSE` invariants introduced in `glibc 2.28` - alongside eliminating Use-After-Free and out-of-bounds write primitives prevents forged bin entries from passing allocator consistency checks.
